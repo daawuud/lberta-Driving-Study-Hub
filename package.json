@@ -1,0 +1,10 @@
+{
+  "name": "alberta-driving-study-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static Alberta driver's licence study hub.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs"
+  }
+}

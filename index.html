@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alberta Driving Study Hub</title>
+    <meta
+      name="description"
+      content="A structured Alberta driver's licence study hub with pathways, study topics, practice tests, road test preparation, and progress tracking."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Study hub navigation">
+        <a class="brand" href="#dashboard" data-route="dashboard" aria-label="Alberta Driving Study Hub home">
+          <span class="brand-mark" aria-hidden="true">AB</span>
+          <span>
+            <strong>Alberta Driving</strong>
+            <small>Study Hub</small>
+          </span>
+        </a>
+
+        <label class="search-label" for="section-search">Search sections</label>
+        <input id="section-search" class="search-input" type="search" placeholder="Signs, Class 7, road test">
+
+        <nav id="side-nav" class="nav-tree"></nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <button class="icon-button menu-button" type="button" aria-label="Toggle navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div>
+            <p class="eyebrow">Study dashboard</p>
+            <h1 id="page-title">Alberta Driving Study Hub</h1>
+          </div>
+          <div class="progress-pill" aria-label="Overall progress">
+            <span id="overall-progress">0%</span>
+            <small>complete</small>
+          </div>
+        </header>
+
+        <section class="hero-band" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Built around your licence path</p>
+            <h2 id="hero-title">Pick a licence, study the right topics, and track what you have covered.</h2>
+            <p>
+              Use the pathway tool, work through shared driving topics, take quick practice sets, and keep official Alberta resources one click away.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-action" href="#pathway" data-route="pathway">Find my path</a>
+              <a class="secondary-action" href="#practice-tests" data-route="practice-tests">Start practice</a>
+            </div>
+          </div>
+          <img class="hero-image" src="assets/study-road.svg" alt="Illustration of Alberta road study cards, signs, and licence pathway markers.">
+        </section>
+
+        <section id="content" class="content-grid" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
